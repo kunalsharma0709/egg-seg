@@ -6,10 +6,13 @@ import cv2, numpy as np
 IMG_DIR = Path("data/images")
 MASK_DIR = Path("outputs/task1/masks")
 EXCLUDE = Path("outputs/exclude.txt")
-HAMMING = 10        # <= is distance pe near-duplicate maanenge
+HAMMING = 6        # <= is distance pe near-duplicate maanenge
 EVAL_FRAC = 0.2     # 4:1 split
 SEED = 42
 
+MANUAL_GROUPS = [
+    ["train_not_damaged_94", "valid_not_damaged_75", "valid_not_damaged_9"],
+]
 
 def dhash(path):
     g = cv2.cvtColor(cv2.imread(str(path)), cv2.COLOR_BGR2GRAY)
@@ -43,6 +46,12 @@ def main():
         for j in range(i + 1, len(files)):
             if np.count_nonzero(hashes[i] != hashes[j]) <= HAMMING:
                 parent[find(i)] = find(j)
+
+        idx_of = {p.name.split("_jpg")[0]: i for i, p in enumerate(files)}
+    for grp in MANUAL_GROUPS:
+        ids = [idx_of[n] for n in grp if n in idx_of]
+        for a in ids[1:]:
+            parent[find(a)] = find(ids[0])            
 
     groups = defaultdict(list)
     for i in range(len(files)):
