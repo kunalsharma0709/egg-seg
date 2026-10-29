@@ -1,0 +1,13 @@
+transformers
+numpy
+scipy
+pandas
+opencv-python
+scikit-image
+matplotlib
+pillow
+tqdm
+pyyaml
+yt-dlp
+
+

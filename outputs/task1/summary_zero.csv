@@ -1,0 +1,10 @@
+filename,dino_boxes,kept_masks,used_fallback
+test_not_damaged_101_jpg.rf.38605ebedec1a67bbdfd051be8fcbf76.jpg,1,1,0
+train_not_damaged_100_jpg.rf.0e04fe05b7527c2c31b686a48473dd57.jpg,1,1,0
+train_not_damaged_141_jpg.rf.83e45bf8f68d19a25dab3adff0d149bb.jpg,1,1,0
+train_not_damaged_146_jpg.rf.0be1cb0c29d489ccd790b023109be479.jpg,1,1,0
+train_not_damaged_48_jpg.rf.a071b305d11beabe3b3d3388bdbd7df5.jpg,1,1,0
+train_not_damaged_58_jpg.rf.be2ca3cefbb29be8a49f65eded5643d2.jpg,1,1,0
+train_not_damaged_88_jpg.rf.4bc36c9e637d2a10b8db1d282f3d0453.jpg,1,1,0
+valid_not_damaged_75_jpg.rf.e092e7f4b80e27a5c6788e96720cb986.jpg,1,1,0
+valid_not_damaged_99_jpg.rf.cd779ec96fdb0125844a3a00a668b7d6.jpg,1,1,0
