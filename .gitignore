@@ -24,3 +24,7 @@ outputs/multi_overlays.jpg
 outputs/task1/summary.csv
 outputs/task1/summary_zero.csv
 outputs/task1/summary_fix_*.csv
+outputs/multi.txt
+outputs/task1/masks_vis/
+outputs/multi.txt
+outputs/task1/masks_vis/
