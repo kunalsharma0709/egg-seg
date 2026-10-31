@@ -19,3 +19,8 @@ outputs/zero*
 outputs/peek.jpg
 data/video/
 outputs/task4/*.mp4
+outputs/g6.*
+outputs/multi_overlays.jpg
+outputs/task1/summary.csv
+outputs/task1/summary_zero.csv
+outputs/task1/summary_fix_*.csv
