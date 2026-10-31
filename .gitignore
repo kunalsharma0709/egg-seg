@@ -13,3 +13,9 @@ outputs/task2/T*/
 outputs/task2/tmp/
 outputs/g6.*data/video/
 outputs/task4/
+outputs/check*
+outputs/fix_*
+outputs/zero*
+outputs/peek.jpg
+data/video/
+outputs/task4/*.mp4

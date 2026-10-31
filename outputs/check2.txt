@@ -1,2 +1,0 @@
-train_not_damaged_139_jpg.rf.0dd7993c7b3291a0571ce8441863bd69.jpg
-train_not_damaged_42_jpg.rf.057a6b84cd6b7fb71a6832fa9f3e5df8.jpg
