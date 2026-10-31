@@ -72,7 +72,15 @@ to `outputs/task3/<split>/`.
 
 ## Task 4: video tracking
 
+The test video is from YouTube (https://www.youtube.com/watch?v=Y4JyV94y2_A). I downloaded it
+manually with the VidSave web tool and saved it as `data/video/egg.mp4`.
+
+Alternatively, you can fetch an equivalent copy (up to 720p) with yt-dlp:
+
     yt-dlp -f "bv*[height<=720]+ba/b[height<=720]" --merge-output-format mp4 -o "data/video/egg.%(ext)s" "https://www.youtube.com/watch?v=Y4JyV94y2_A"
+
+Then run the tracker:
+
     python -m eggseg.track --out outputs/task4/tracked_final.mp4
 
 Per-frame results are written next to the video as a CSV (`outputs/task4/tracked_final.csv` is
