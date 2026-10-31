@@ -6,7 +6,7 @@ analysis. Task 4: video tracking of individual eggs.
 
 - Report: `report/report.pdf`
 - Experiment log (Task 2 and Task 4 trials): `experiments/experiment_log.md`
-- Tracked video output: Google Drive link in the report (also: <https://drive.google.com/file/d/1Le9tQuM2JbNpxv25Q5JKKlrfJSdOELYF/view?usp=sharing>)
+- Tracked video output (Task 4): <https://drive.google.com/file/d/1Le9tQuM2JbNpxv25Q5JKKlrfJSdOELYF/view?usp=sharing> 
 
 ## Setup
 
@@ -22,7 +22,7 @@ Tested on Windows (PowerShell), Python 3.10, torch 2.14.1+cu126, transformers 5.
 The Task 1 models (Grounding DINO tiny, SAM ViT-B) are downloaded from Hugging Face on first use.
 
 ## Data
-Dataset : <https://universe.roboflow.com/fire-bf7qe/egg-vzhtr/dataset/1>
+Dataset: Roboflow Universe, `fire-bf7qe/egg-vzhtr`, version 3: <https://universe.roboflow.com/fire-bf7qe/egg-vzhtr/dataset/3>
 Download the Roboflow dataset in "Folder Structure" format and extract it so that `data/raw/`
 contains `train/`, `valid/` and `test/`. The Roboflow split is not used. All images are merged into
 one folder and the dev/eval split is made by us (Task 2).
